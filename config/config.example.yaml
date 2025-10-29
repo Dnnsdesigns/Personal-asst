@@ -1,0 +1,31 @@
+# Personal Assistant Configuration Example
+# Copy this file to config.yaml and customize your settings
+
+ai:
+  provider: "openai"  # AI provider (openai, anthropic, etc.)
+  model: "gpt-3.5-turbo"  # Model name
+  api_key: null  # Set via OPENAI_API_KEY environment variable
+  temperature: 0.7  # Model creativity (0.0-2.0)
+  max_tokens: 1000  # Maximum response length
+
+ui:
+  default_interface: "cli"  # Default interface (cli, web, voice)
+  voice_enabled: false  # Enable voice interface
+  web_port: 8501  # Web interface port
+
+logging:
+  level: "INFO"  # Logging level (DEBUG, INFO, WARNING, ERROR, CRITICAL)
+  file: null  # Optional log file path
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+
+# Plugin configurations
+plugins:
+  task_plugin:
+    enabled: true
+    max_tasks: 100
+    
+  # Add more plugin configurations here
+  # weather_plugin:
+  #   enabled: true
+  #   api_key: "your_weather_api_key"
+  #   default_city: "New York"
