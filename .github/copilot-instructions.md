@@ -70,7 +70,7 @@ pytest -m "not integration"      # Skip integration tests
 5. Response formatting → Back through UI layer to user
 
 ### Voice Interface
-- Speech recognition via `speech-recognition` library
+- Speech recognition via `Speech recognition` library
 - Text-to-speech with `pyttsx3`
 - Audio processing utilities in `src/ui/voice.py`
 
